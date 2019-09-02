@@ -18,7 +18,8 @@
 
 # From https://devcentral.f5.com
 # Version: unknown
-mvn install:install-file -Dfile=cloud-iControl.jar      -DgroupId=com.cloud.com.f5     -DartifactId=icontrol        -Dversion=1.0   -Dpackaging=jar
+mvn install:install-file -Dfile=cloud-iControl.jar -DgroupId=com.cloud.com.f5 -DartifactId=icontrol -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=iControl-12.1.0.jar -DgroupId=com.cloud.com.f5 -DartifactId=icontrol -Dversion=12.1 -Dpackaging=jar
 
 # From Citrix
 # Version: unknown
@@ -36,3 +37,6 @@ mvn install:install-file -Dfile=vim25_60.jar        -DgroupId=com.cloud.com.vmwa
 
 # From https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-MGMT-SDK65
 mvn install:install-file -Dfile=vim25_65.jar        -DgroupId=com.cloud.com.vmware -DartifactId=vmware-vim25    -Dversion=6.5   -Dpackaging=jar
+
+# From https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-MGMT-SDK67
+mvn install:install-file -Dfile=vim25_67.jar        -DgroupId=com.cloud.com.vmware -DartifactId=vmware-vim25    -Dversion=6.7   -Dpackaging=jar
